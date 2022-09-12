@@ -35,5 +35,5 @@
 yarn-debug.log*
 .yarn-integrity
 
-# Igonre coverage from simplecov
+# Ignore coverage from simplecov
 /coverage
