@@ -35,6 +35,9 @@ group :development, :test do
   # Tests gems
   gem 'rspec-rails'
   gem "capybara"
+
+  # Tests coverage
+  gem 'simplecov'
 end
 
 group :development do
