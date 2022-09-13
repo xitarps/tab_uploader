@@ -2,7 +2,9 @@
   <h2><%= t(:home) %></h2>
 
   <% if signed_in? %>
-    <%= link_to t(:upload_purchases_file), new_upload_path %>
+    <p>
+      <%= link_to t(:upload_purchases_file), new_upload_path %>
+    </p>
   <% end %>
 
   <p>
