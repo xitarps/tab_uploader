@@ -1,3 +1,15 @@
-<h2><%= t(:upload_total) %>: <%= number_to_currency @upload_result[:file_gross_income] %></h2>
-<h2><%= t(:upload_total_ever) %>: <%= number_to_currency @upload_result[:total_gross_income] %></h2>
-<%= link_to t(:upload_another_file) , new_upload_path %>
+<span class="text-center">
+  <h2><%= t(:upload_total) %>: 
+    <span class="text-primary">
+      <%= number_to_currency @upload_result[:file_gross_income] %>
+    </span>
+  </h2>
+  <h2><%= t(:upload_total_ever) %>: 
+    <span class="text-success">
+      <%= number_to_currency @upload_result[:total_gross_income] %>
+    </span>
+  </h2>
+  <p>
+    <%= link_to t(:upload_another_file) , new_upload_path%>
+  </p>
+</span>
