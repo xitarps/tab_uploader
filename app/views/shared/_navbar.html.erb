@@ -1,12 +1,21 @@
-<p>
-  <%= link_to t(:home), root_path %> | 
-  <% if signed_in? %>
-    <%= link_to t(:upload), new_upload_path %> |
-    <%= link_to t(:edit_user), edit_user_registration_path %> | 
-    <%= link_to t(:log_out), destroy_user_session_path, method: :delete %>
-  <% else %>
-  <%= link_to t(:log_in), new_user_session_path %>
-  <% end %>
-</p>
+<nav class="navbar navbar-light bg-secondary">
+  <div class="container-fluid">
 
-<hr>
+    <form class="d-flex align-items-center">
+      <%= link_to t(:home), root_path, class:"navbar-brand text-light" %>
+      <% if signed_in? %>
+        <%= link_to t(:upload), new_upload_path, class: 'nav-link text-light' %>
+      <% end %>
+    </form>
+
+    <form class="d-flex">
+      <% if signed_in? %>
+        <%= link_to t(:edit_user), edit_user_registration_path, class: 'nav-link px-5 text-light' %>
+        <%= link_to t(:log_out), destroy_user_session_path, method: :delete, class: 'nav-link text-light' %>
+      <% else %>
+        <%= link_to t(:log_in), new_user_session_path, class: 'nav-link text-light' %>
+      <% end %>
+    </form>
+
+  </div>
+</nav>

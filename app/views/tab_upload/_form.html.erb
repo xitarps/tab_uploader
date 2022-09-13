@@ -1,6 +1,13 @@
 <%= form_with url: upload_path , multipart: true do |f| %>
-  <%= f.label :file, t(:select_file) %>
-  <%= f.file_field :file %>
-
-  <%= f.submit %>
+  <h5 class="link-primary m-5">
+    <%= f.label :file, t(:select_file), class: 'custom-link' %>
+  </h5>
+  <span class="d-flex w-100 justify-content-center">
+    <div >
+      <%= f.file_field :file %>
+    </div>
+    <div>
+        <%= f.submit data:  { disable_with: '...' } %>
+    </div>
+  </span>
 <% end %>
