@@ -16,6 +16,13 @@ This project was made with:
 
 https://trello.com/b/Ct5Q5K6q/tabuploader
 
+## Possible Improvements
+
+ - Add a prices table to allow better control over prices
+ - Improve UploadSalesHistory to have more details
+ - Enable Devise features(With mailer as example)
+ - Add more details to show page
+
 ## How to run
 
 clone this repo
