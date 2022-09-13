@@ -57,3 +57,7 @@ run Rubocop
 ```
 rubocop
 ```
+
+## Preview
+
+<img src="./github_images/tab_uploader.gif" width="250" title="hover text">
