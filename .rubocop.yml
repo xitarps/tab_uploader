@@ -283,3 +283,9 @@ Rails/WhereMissing: # new in 2.16
   Enabled: true
 Rails/WhereNot: # new in 2.8
   Enabled: true
+
+# Custom
+Style/StringLiterals:
+  Enabled: true
+  Exclude:
+    - 'app/services/tab_upload_service.rb'
