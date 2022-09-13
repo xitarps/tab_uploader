@@ -10,6 +10,8 @@ This project was made with:
  - PostgreSQL
  - Bootstrap 5
 
+ * obs: double check if you have yarn and postgresql is running
+
 ## Development Board
 
 https://trello.com/b/Ct5Q5K6q/tabuploader
