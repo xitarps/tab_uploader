@@ -2,11 +2,11 @@
   <h5 class="link-primary m-5">
     <%= f.label :file, t(:select_file), class: 'custom-link' %>
   </h5>
-  <span class="d-flex w-100 justify-content-center">
+  <span>
     <div >
       <%= f.file_field :file %>
     </div>
-    <div>
+    <div class="mt-5">
         <%= f.submit data:  { disable_with: '...' } %>
     </div>
   </span>
