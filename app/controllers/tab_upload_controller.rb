@@ -2,6 +2,8 @@
 
 # Controller made to handle tab files upload
 class TabUploadController < ApplicationController
+  before_action :authenticate_user!
+
   def new; end
 
   def create
