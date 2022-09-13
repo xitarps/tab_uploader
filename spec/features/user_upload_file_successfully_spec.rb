@@ -8,13 +8,13 @@ RSpec.describe 'User' do
     context 'when correct file' do
       it 'success' do
         result = TabUploadService.call(tab_test_file.read )
-        upload_value = result[:uploads_values][:file_gross_income]
-        all_uploads_value = result[:uploads_values][:total_gross_income]
+        upload_value = result[:uploads_values][:file_gross_income].to_s.gsub('.',',')
+        all_uploads_value = result[:uploads_values][:total_gross_income].to_s.gsub('.',',')
 
         visit root_path
-        click_on :Upload
+        click_on :Envio
 
-        attach_file 'Select File:', tab_test_file
+        attach_file I18n.t(:select_file), tab_test_file
 
         click_on :Salvar
 
@@ -31,7 +31,7 @@ RSpec.describe 'User' do
         all_uploads_value = result[:uploads_values][:total_gross_income]
 
         visit root_path
-        click_on :Upload
+        click_on :Envio
 
         click_on :Salvar
 

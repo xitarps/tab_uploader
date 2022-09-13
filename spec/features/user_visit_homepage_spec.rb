@@ -8,7 +8,7 @@ RSpec.describe 'User' do
       it 'successfully' do
         visit root_path
 
-        expect(page).to have_content('Home')
+        expect(page).to have_content(I18n.t(:home))
       end
     end
   end
