@@ -1,6 +1,12 @@
 <p>
   <%= link_to t(:home), root_path %> | 
-  <%= link_to t(:upload), new_upload_path %> 
+  <% if signed_in? %>
+    <%= link_to t(:upload), new_upload_path %> |
+    <%= link_to t(:edit_user), edit_user_registration_path %> | 
+    <%= link_to t(:log_out), destroy_user_session_path, method: :delete %>
+  <% else %>
+  <%= link_to t(:log_in), new_user_session_path %>
+  <% end %>
 </p>
 
 <hr>
