@@ -38,6 +38,9 @@ group :development, :test do
 
   # Tests coverage
   gem 'simplecov'
+
+  # Linter
+  gem 'rubocop-rails'
 end
 
 group :development do
