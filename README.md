@@ -60,4 +60,10 @@ rubocop
 
 ## Preview
 
-<img src="./github_images/tab_uploader.gif" width="250" title="hover text">
+<img src="./github/images/tab_uploader.gif" width="250" title="hover text">
+
+
+## Test '.tab' file
+
+Download:
+<a href="https://github.com/xitarps/tab_uploader/tree/main/github/tab_file/example_input.tab">example_input.tab</a>
