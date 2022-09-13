@@ -289,3 +289,8 @@ Style/StringLiterals:
   Enabled: true
   Exclude:
     - 'app/services/tab_upload_service.rb'
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  Exclude:
+    - 'spec/services/tab_upload_service_spec.rb'
