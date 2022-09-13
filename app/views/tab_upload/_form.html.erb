@@ -1,5 +1,5 @@
 <%= form_with url: upload_path , multipart: true do |f| %>
-  <%= f.label :file, "Select File:" %>
+  <%= f.label :file, t(:select_file) %>
   <%= f.file_field :file %>
 
   <%= f.submit %>

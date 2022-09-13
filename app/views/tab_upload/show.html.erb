@@ -1,3 +1,3 @@
-<h2>Total do upload: <%= @upload_result[:file_gross_income] %></h2>
-<h2>Total de todos os uploads: <%= @upload_result[:total_gross_income] %></h2>
-<%= link_to 'upload another file', new_upload_path %>
+<h2><%= t(:upload_total) %>: <%= number_to_currency @upload_result[:file_gross_income] %></h2>
+<h2><%= t(:upload_total_ever) %>: <%= number_to_currency @upload_result[:total_gross_income] %></h2>
+<%= link_to t(:upload_another_file) , new_upload_path %>
