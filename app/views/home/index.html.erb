@@ -1,3 +1,9 @@
 <h2><%= t(:home) %></h2>
 
-<%= link_to t(:upload_purchases_file), new_upload_path %>
+<% if signed_in? %>
+  <%= link_to t(:upload_purchases_file), new_upload_path %>
+<% end %>
+
+<p>
+  <%= t(:welcome_text) %>
+</p>

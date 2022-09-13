@@ -16,6 +16,8 @@ pt-BR:
   confirm_with_current_password: 'Precisamos da senha atual para confirmar as modificações'
   unhappy: 'Descontente?'
   back: 'voltar'
+  log_out: 'Sair'
+  edit_user: 'Preferências'
   devise:
     confirmations:
       confirmed: "Sua conta foi confirmada com sucesso. Você está logado."
