@@ -1,0 +1,26 @@
+@import 'bootstrap';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#main-container{
+  height: 100%;
+}
+
+.bg {
+  background-color: rgb(0, 17, 26); 
+}
+
+.invisible{
+  display: none;
+}
+
+.custom-link{
+  cursor: pointer !important;
+}
+.custom-link:hover{
+  cursor: pointer !important;
+}

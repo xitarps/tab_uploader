@@ -1,9 +1,11 @@
-<h2><%= t(:home) %></h2>
+<span class="text-center">
+  <h2><%= t(:home) %></h2>
 
-<% if signed_in? %>
-  <%= link_to t(:upload_purchases_file), new_upload_path %>
-<% end %>
+  <% if signed_in? %>
+    <%= link_to t(:upload_purchases_file), new_upload_path %>
+  <% end %>
 
-<p>
-  <%= t(:welcome_text) %>
-</p>
+  <p>
+    <%= t(:welcome_text) %>
+  </p>
+</span>
